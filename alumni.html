@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumni - Team Robolution</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script defer src="script.js"></script>
+    <script defer src="alumni.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo" />
+            <span class="brand-name">TEAM ROBOLUTION</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="alumni.html" class="active">Alumni</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="all-members.html">All Members</a></li>
+        </ul>
+    </nav>
+
+    <!-- Video Background -->
+    <video id="background-video" autoplay muted loop>
+        <source src="13495-248644905.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Particle Background -->
+    <div class="particle-bg">
+        <!-- Particles dynamically added via JavaScript -->
+    </div>
+
+    <!-- Water ripple effect container -->
+    <canvas id="water-ripple"></canvas>
+
+    <!-- Hero Section -->
+    <header class="hero futuristic-section">
+        <div class="hero-content">
+            <h1>OUR ALUMNI</h1>
+            <p>The Legacy of Innovation Continues...</p>
+        </div>
+    </header>
+
+    <!-- Alumni Section -->
+    <section id="alumni" class="alumni-section">
+        <h2 class="futuristic-hover">Distinguished Alumni</h2>
+        
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="2021">Class of 2021</button>
+            <button class="filter-btn" data-filter="2020">Class of 2020</button>
+            <button class="filter-btn" data-filter="2019">Class of 2019</button>
+            <button class="filter-btn" data-filter="2018">Class of 2018</button>
+            <button class="filter-btn" data-filter="2017">Class of 2017</button>
+            <button class="filter-btn" data-filter="2016">Class of 2016</button>
+            <button class="filter-btn" data-filter="2015">Class of 2015</button>
+            <button class="filter-btn" data-filter="2014">Class of 2014</button>
+        </div>
+        
+        <div class="alumni-container">
+            <!-- Alumni 1 -->
+            <div class="alumni-card" data-year="2021">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="Aman-Sir.png" alt="Aman Bhatt" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Aman Bhatt</h3>
+                    <p class="alumni-title">Software Engineer @ AutoDesk Fusion</p>
+                    <p class="alumni-branch">Electrical Engineering</p>
+                    <p class="alumni-year">Class of 2021</p>
+                    <div class="alumni-bio">
+                        <p>"Former team captain who led the autonomous drone project. Currently developing AI models for robotics applications."</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://www.linkedin.com/in/aman-bhatt-40a198173?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 2 -->
+            <div class="alumni-card" data-year="2023">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/alumni2.jpg" alt="Ankur" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Ankur</h3>
+                    <p class="alumni-title">Robotics Specialist @ Boston Dynamics</p>
+                    <p class="alumni-year">Class of 2021</p>
+                    <p class="alumni-branch">Electronics and Communication Engineering</p>
+                    <div class="alumni-bio">
+                        <p>"Mechanical design lead who revolutionized our bipedal robot platform. Now working on next-gen robotic systems."</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/priyapatel" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 3 -->
+            <div class="alumni-card" data-year="2021">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/alumni3.jpg" alt="Ashwin" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Ashwin</h3>
+                    <p class="alumni-title">Embedded Systems Engineer @ Tesla</p>
+                    <p class="alumni-year">Class of 2021</p>
+                    <p class="alumni-branch">Electronics and Communication Engineering</p>
+                    <div class="alumni-bio">
+                        <p>"Led firmware development for our award-winning autonomous rover. Expert in low-level hardware integration and real-time systems."</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/amitkumar" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 4 -->
+            <div class="alumni-card" data-year="2022">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/alumni4.jpg" alt="Sophia Chen" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Sophia Chen</h3>
+                    <p class="alumni-title">ML Researcher @ OpenAI</p>
+                    <p class="alumni-year">Class of 2022</p>
+                    <div class="alumni-bio">
+                        <p>"Computer vision specialist who developed our object detection system. Now pushing boundaries in machine learning for robotics."</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/sophiachen" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 5 -->
+            <div class="alumni-card" data-year="2021">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/alumni5.jpg" alt="Vikram Singh" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Vikram Singh</h3>
+                    <p class="alumni-title">Robotics Startup Founder</p>
+                    <p class="alumni-year">Class of 2021</p>
+                    <div class="alumni-bio">
+                        <p>"Former team lead who specialized in robot kinematics. Founded a robotics startup focused on agricultural automation solutions."</p>
+                    </div>
+                    <div class="alumni-social">
+                        <a href="https://linkedin.com/in/vikramsingh" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alumni 6 -->
+            <div class="alumni-card" data-year="2021">
+                <div class="alumni-img-container">
+                    <div class="img-overlay"></div>
+                    <img src="images/alumni6.jpg" alt="Ananya Gupta" class="alumni-img">
+                </div>
+                <div class="alumni-details">
+                    <h3>Ananya Gupta</h3>
+                    <p class="alumni-title">PCB Designer @ SpaceX</p>
+                    <p class="alumni-year">Class of 2021</p>
+                    <div class="alumni-bio">
+                        <p>"Hardware expert who designed our custom control boards. Now creating electronic systems for space exploration vehicles."</p>
+                    </div>
+                    <div section id= "butt" class="alumni-social">
+                        <a href="https://linkedin.com/in/ananyagupta" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="logo.png" alt="Team Robolution Logo" class="footer-logo" />
+                <span class="footer-brand-name">TEAM ROBOLUTION</span>
+            </div>
+            <p class="footer-text">Pioneering the future of robotics.</p>
+            <div class="footer-social-links">
+                <a href="https://instagram.com/team_robolution" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/company/teamrobolution" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/teamrobolution" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/teamrobolution" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Team Robolution. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
